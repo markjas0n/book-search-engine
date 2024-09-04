@@ -21,16 +21,16 @@ The Book Search Engine is a full-stack web application built using the MERN (Mon
 The .gifs below demonstrate the functionality of the application:
 
 - **Running the Application**
-![Run application](Develop/client/assets/images/start.gif)
+    ![Run application](Develop/client/assets/images/start.gif)
 
 - **Searching a book** 
-![Search-a-book](Develop/client/assets/images/search.gif)
+    ![Search-a-book](Develop/client/assets/images/search.gif)
 - **Signing-up** 
-![Sign-Up](Develop/client/assets/images/signup.gif)
-- **Loging In**
-![Login](Develop/client/assets/images/login.gif)
+    ![Sign-Up](Develop/client/assets/images/signup.gif)
+- **Logging in**
+    ![Logging](Develop/client/assets/images/login.gif)
 - **Delete a book**
-![Delete](Develop/client/assets/images/delte.gif)
+    ![Delete](Develop/client/assets/images/delte.gif)
 
 ## Features
 
