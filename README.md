@@ -19,6 +19,13 @@
 The Book Search Engine is a full-stack web application built using the MERN (MongoDB, Express.js, React, Node.js) stack with Apollo Server for GraphQL API handling. The application allows users to search for books using the Google Books API and save their favorite books to a personal list, accessible upon login.
 
 ## Screenshots
+The .gifs below demonstrate the functionality of the application:
+
+![Run application](Develop/client/assets/images/start.gif)
+![Search-a-book](Develop/client/assets/images/search.gif)
+![Sign-Up](Develop/client/assets/images/signup.gif)
+![Login](Develop/client/assets/images/login.gif)
+![Delete](Develop/client/assets/images/delte.gif)
 
 ## Features
 
