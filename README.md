@@ -6,13 +6,12 @@
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Installation](#installation)
-6. [Installation](#installation)
-7. [Usage](#usage)
-8. [Deployment](#deployment)
-9. [Future Improvments](#future-improvements)
-10. [License](#license)
-11. [Acknowledgements](#acknowledgements)
-12. [Contact](#contact)
+6. [Usage](#usage)
+7. [Deployment](#deployment)
+8. [Future Improvments](#future-improvements)
+9. [License](#license)
+10. [Acknowledgements](#acknowledgements)
+11. [Contact](#contact)
 
 ## Overview
 
