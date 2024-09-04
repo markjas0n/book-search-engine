@@ -1,12 +1,8 @@
-// SearchBooks.jsx
-// Component for searching books using the Google Books API and saving them to the user's account.
-
 import { useState } from 'react';
 import { Container, Col, Form, Button, Card, Row } from 'react-bootstrap';
 import Auth from '../utils/auth';
 import { useMutation } from '@apollo/client';
 import { SAVE_BOOK } from '../utils/mutations';
-import { searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
 const SearchBooks = () => {
@@ -15,6 +11,13 @@ const SearchBooks = () => {
   const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
   const [saveBook] = useMutation(SAVE_BOOK);
 
+  // Function to search for books using the Google Books API
+  const searchGoogleBooks = async (query) => {
+    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+    return response.json(); // Assuming the function should return the parsed JSON response
+  };
+
+  // Function to handle form submission
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
@@ -23,13 +26,7 @@ const SearchBooks = () => {
     }
 
     try {
-      const response = await searchGoogleBooks(searchInput);
-
-      if (!response.ok) {
-        throw new Error('something went wrong!');
-      }
-
-      const { items } = await response.json();
+      const { items } = await searchGoogleBooks(searchInput); // Now using the defined function
 
       const bookData = items.map((book) => ({
         bookId: book.id,
