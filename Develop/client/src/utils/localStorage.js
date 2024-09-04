@@ -1,3 +1,6 @@
+// localStorage.js
+// Utility functions to handle localStorage for saving and removing book IDs.
+
 export const getSavedBookIds = () => {
   const savedBookIds = localStorage.getItem('saved_books')
     ? JSON.parse(localStorage.getItem('saved_books'))
