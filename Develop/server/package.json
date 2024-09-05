@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "preinstall": "rm -rf node_modules/bcrypt",
+    "postinstall": "npm install bcrypt"
   },
   "keywords": [],
   "author": "",
